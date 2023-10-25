@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rastgele Takımlar</title>
+</head>
+<body>
+    <h1>Rastgele olarak oluşturulmuş takımlar</h1>
+    {% for team, members in teams.items() %}
+        <h2>{{ team }}</h2>
+        <ul>
+            {% for member in members %}
+                <li>{{ member }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
